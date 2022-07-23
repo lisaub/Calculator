@@ -20,13 +20,13 @@ function divide(value1,value2) {
 
 function operate(value1,value2,operator) {
   if (operator==='+') {
-    return add(value1,value2)
+    return parseFloat(add(value1,value2)).toFixed(2);
   }
   if (operator==='-') {
-    return subtract(value1,value2)
+    return parseFloat(subtract(value1,value2)).toFixed(2);
   }
   if (operator==='*') {
-    return multiply(value1,value2)
+    return parseFloat(multiply(value1,value2)).toFixed(2);
   }
   if (operator==='/') {
     if(value2 === 0) {
