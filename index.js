@@ -32,7 +32,7 @@ function operate(value1,value2,operator) {
     if(value2 === 0) {
         return 'inf';
     } else {
-    return Math.round(divide(value1,value2))
+    return parseFloat(divide(value1,value2)).toFixed(2);
     } 
   }
 }
